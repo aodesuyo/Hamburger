@@ -15,12 +15,11 @@
         position: absolute;
         top:0;
         right: 0;
-        transform: translateX();
+        height: 100%;
         @include media_PC_wide{
             position: static;
             display: block;
-            transform: translateX();
-
+            height: auto;
         }    
     }
 
