@@ -82,14 +82,14 @@ Layout
   position: absolute;
   top: 0;
   right: 0;
-  transform: translateX();
+  height: 100%;
 }
 
 @media only screen and (min-width: 1920px) {
   .l-colum-nav {
     position: static;
     display: block;
-    transform: translateX();
+    height: auto;
   }
 }
 
