@@ -1,0 +1,34 @@
+
+@mixin media_PC_wide($width-media:1920px){
+    @media only screen and
+      (min-width:$width-media){
+      @content;
+    }
+  }
+
+
+@mixin media_PC($width-media:834px){
+    @media only screen and
+      (min-width:$width-media){
+      @content;
+    }
+  }
+
+$beige:#F2EDE9;
+$darkgray:#707070;
+$blown:#3C2A10;
+
+*{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif,'M PLUS 1p', sans-serif;
+}
+::-webkit-search-cancel-button {
+  -webkit-appearance: none;    /* デフォルトのサーチキャンセルボタンを非表示にする場合 */
+}
+li{
+  list-style: none;
+}
+a{
+  color : inherit;
+  text-decoration : none;
+}

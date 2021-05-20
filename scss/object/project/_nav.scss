@@ -1,0 +1,21 @@
+.p-nav{
+    background-color: $beige;
+    color:$darkgray;
+    padding-left: 46px;
+    &__btn{
+        font-size: 4rem;
+        padding-top:25px;
+        padding-left:calc(100% - 46px - 7px);
+        @include media_PC_wide{
+            display: none;
+        }
+    }
+    &__title{
+        display: none;
+        @include media_PC_wide{
+            display: block;
+            font-size: 4rem;
+            margin: 85px 0;
+        }
+    }
+}
