@@ -1,26 +1,22 @@
-.c-colum{
-    position: relative;
-    @include media_PC_wide{
-        display: flex;
-    }
+.l-colum{
     &-main{
-    @include media_PC_wide{
-        width: calc(100% - 367px);
-    }
-    }   
-    &-nav{
-        display: none;
-        max-width:367px;
-        width: 87%;
-        position: absolute;
-        top:0;
-        right: 0;
-        height: 100%;
         @include media_PC_wide{
-            position: static;
-            display: block;
-            height: auto;
-        }    
-    }
-
+            width: calc(100% - 367px);
+        }
+        }   
+        &-nav{
+            display: none;
+            max-width:367px;
+            width: 87%;
+            position: absolute;
+            top:0;
+            right: 0;
+            height: 100%;
+            @include media_PC_wide{
+                position: static;
+                display: block;
+                height: auto;
+            }    
+        }
+    
 }
