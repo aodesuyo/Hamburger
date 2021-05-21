@@ -47,23 +47,23 @@ Layout
   height: 150px;
 }
 
-.l-colum {
+.c-colum {
   position: relative;
 }
 
 @media only screen and (min-width: 1920px) {
-  .l-colum {
+  .c-colum {
     display: flex;
   }
 }
 
 @media only screen and (min-width: 1920px) {
-  .l-colum-main {
+  .c-colum-main {
     width: calc(100% - 367px);
   }
 }
 
-.l-colum-nav {
+.c-colum-nav {
   display: none;
   max-width: 367px;
   width: 87%;
@@ -74,7 +74,7 @@ Layout
 }
 
 @media only screen and (min-width: 1920px) {
-  .l-colum-nav {
+  .c-colum-nav {
     position: static;
     display: block;
     height: auto;
