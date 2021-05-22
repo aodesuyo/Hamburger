@@ -16,7 +16,7 @@ $(document).ready(function(){
     }
     );
     $(window).on('resize',function(){
-        if($(window).width()>1290)
+        if($(this).width()>1920)
         {
             $('.l-colum-nav').css({
                 transform:'translate(0)',
@@ -28,6 +28,8 @@ $(document).ready(function(){
                 transform:'translate(367px)',
                 transiton:"none"    
             });
+            $('.p-nav__background').hide();
+
         }
     });
 });

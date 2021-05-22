@@ -2,6 +2,10 @@
 /* =========================================================
 Foundation
 ========================================================= */
+body {
+  overflow-x: hidden;
+}
+
 * {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif,'M PLUS 1p', sans-serif;
@@ -381,6 +385,12 @@ Project
   z-index: -1;
 }
 
+@media only screen and (min-width: 1920px) {
+  .p-about__layer {
+    width: 60%;
+  }
+}
+
 .p-about__map {
   position: absolute;
   top: 0;
@@ -399,6 +409,13 @@ Project
   background-color: rgba(0, 0, 0, 0.3);
   padding: 40px;
   height: 100%;
+}
+
+@media only screen and (min-width: 1920px) {
+  .p-about__wrapper {
+    padding-top: 80px;
+    padding-left: 7%;
+  }
 }
 
 .p-about__title {
@@ -422,8 +439,8 @@ Project
 
 @media only screen and (min-width: 1920px) {
   .p-about__text {
-    font-size: 2rem;
-    line-height: 5rem;
+    width: 62%;
+    padding-right: 10%;
   }
 }
 

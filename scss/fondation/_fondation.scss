@@ -18,6 +18,10 @@ $beige:#F2EDE9;
 $darkgray:#707070;
 $blown:#3C2A10;
 
+body{
+  overflow-x: hidden;
+}
+
 *{
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif,'M PLUS 1p', sans-serif;
