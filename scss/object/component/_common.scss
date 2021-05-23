@@ -7,12 +7,20 @@
         color: $blown;
         font-size: 1.6rem;
         margin: 19px 0;
+        @include media_PC{
+            margin-bottom: 40px;
+        }
+        @include media_PC_wide{
+            margin-bottom: 60px;
+        }
         &--white{
-            color: white;
+            color: white;    
         }
         &--white-bold{
             color: white;
             font-weight: 600;
+            font-size: 2.4rem;
+            margin-bottom: 0px;
         }
     }
 }
@@ -27,6 +35,10 @@ h3.c-common{
         &--white{
             font-size: 2rem;
             color: white;
+            @include media_PC_wide{
+                font-size: 3.6rem;
+                margin-bottom: 47px;
+            }
         }
     }
 }

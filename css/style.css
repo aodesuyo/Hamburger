@@ -95,7 +95,7 @@ Layout
 
 @media only screen and (min-width: 1920px) {
   .l-archive-wrapper {
-    padding: 0 5%;
+    padding: 30px 100px 120px;
   }
 }
 
@@ -171,12 +171,33 @@ Component
   overflow: hidden;
 }
 
+@media only screen and (min-width: 834px) {
+  .c-archive-card {
+    display: flex;
+    margin-bottom: 21px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .c-archive-card {
+    margin-bottom: 30px;
+  }
+}
+
 .c-archive-card__visual {
   width: 100%;
   height: 50vw;
   object-fit: cover;
   vertical-align: bottom;
   object-position: left top;
+}
+
+@media only screen and (min-width: 834px) {
+  .c-archive-card__visual {
+    width: 50%;
+    height: auto;
+    vertical-align: baseline;
+  }
 }
 
 .c-archive-card__wrapper {
@@ -186,14 +207,36 @@ Component
   margin-bottom: 21px;
 }
 
+@media only screen and (min-width: 834px) {
+  .c-archive-card__wrapper {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .c-archive-card__wrapper {
+    padding-top: 53px;
+    padding-bottom: 60px;
+  }
+}
+
 .c-archive-card__btn {
   background-color: #fff;
-  padding: 10px 42px;
+  height: 42px;
+  width: 163px;
   border-radius: 40px;
   font-size: 1.6rem;
   font-weight: 600;
   color: #707070;
-  margin-left: calc(50% - 84px);
+  margin-left: calc(50% - 163px / 2);
+}
+
+@media only screen and (min-width: 1920px) {
+  .c-archive-card__btn {
+    height: 75.6px;
+    width: 293.4px;
+    margin-left: calc(50% - 293.4px /2);
+  }
 }
 
 .c-visual {
@@ -266,6 +309,18 @@ Component
   margin: 19px 0;
 }
 
+@media only screen and (min-width: 834px) {
+  .c-common__text {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .c-common__text {
+    margin-bottom: 60px;
+  }
+}
+
 .c-common__text--white {
   color: white;
 }
@@ -273,6 +328,8 @@ Component
 .c-common__text--white-bold {
   color: white;
   font-weight: 600;
+  font-size: 2.4rem;
+  margin-bottom: 0px;
 }
 
 h2.c-common__title {
@@ -283,6 +340,13 @@ h2.c-common__title {
 h3.c-common__title--white {
   font-size: 2rem;
   color: white;
+}
+
+@media only screen and (min-width: 1920px) {
+  h3.c-common__title--white {
+    font-size: 3.6rem;
+    margin-bottom: 47px;
+  }
 }
 
 /* =========================================================
