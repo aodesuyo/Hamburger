@@ -90,7 +90,13 @@ Layout
 }
 
 .l-archive-wrapper {
-  padding: 0 22px 0 18.9px;
+  padding: 0 5%;
+}
+
+@media only screen and (min-width: 1920px) {
+  .l-archive-wrapper {
+    padding: 0 5%;
+  }
 }
 
 .l-visual {
@@ -219,6 +225,18 @@ Component
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.c-common__title {
+  color: #3C2A10;
+  font-size: 4rem;
+  margin: 30px 0;
+}
+
+.c-common__text {
+  color: #3C2A10;
+  font-size: 1.6rem;
+  margin: 19px 0;
 }
 
 /* =========================================================

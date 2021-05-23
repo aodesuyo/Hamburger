@@ -1,5 +1,8 @@
 .l-archive{
     &-wrapper{
-        padding:0 22px 0 18.9px;  
+        padding:0 5%;  
+        @include media_PC_wide{
+            padding:0 5%;
+        }
     }
 }
