@@ -16,7 +16,7 @@ $(document).ready(function(){
     }
     );
     $(window).on('resize',function(){
-        if($(this).width()>1920)
+        if($(this).width()>=1895)
         {
             $('.l-colum-nav').css({
                 transform:'translate(0)',
