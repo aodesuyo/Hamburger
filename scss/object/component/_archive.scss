@@ -4,7 +4,6 @@
         min-width: 2000px;
         object-fit: cover;
         object-position: -300px center;
-        z-index: -1;
         @include media_PC_wide{
             min-width: none;
             width: 100%;
@@ -26,5 +25,14 @@
                 display: none;
             }
         }
+    }
+    &__layer{
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
+        position: absolute;
+        top:0;
+        left: 0;
+ 
     }
 }
