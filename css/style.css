@@ -90,7 +90,7 @@ Layout
 }
 
 .l-archive-wrapper {
-  padding: 0 5%;
+  padding: 0 5% 12vw;
 }
 
 @media only screen and (min-width: 1920px) {
@@ -201,8 +201,9 @@ Component
 }
 
 .c-archive-card__wrapper {
-  display: block;
-  padding: 30px 5% 44px 5%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20% 44px 5%;
   background-color: #3C2A10;
   margin-bottom: 21px;
 }
@@ -210,6 +211,7 @@ Component
 @media only screen and (min-width: 834px) {
   .c-archive-card__wrapper {
     margin-bottom: 0;
+    padding-right: 7%;
   }
 }
 
@@ -228,7 +230,15 @@ Component
   font-size: 1.6rem;
   font-weight: 600;
   color: #707070;
-  margin-left: calc(50% - 163px / 2);
+  margin-left: 21vw;
+}
+
+@media only screen and (min-width: 834px) {
+  .c-archive-card__btn {
+    margin-left: 10vw;
+    margin-top: auto;
+    margin-bottom: 40px;
+  }
 }
 
 @media only screen and (min-width: 1920px) {
@@ -328,8 +338,13 @@ Component
 .c-common__text--white-bold {
   color: white;
   font-weight: 600;
-  font-size: 2.4rem;
   margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 1920px) {
+  .c-common__text--white-bold {
+    font-size: 2.4rem;
+  }
 }
 
 h2.c-common__title {
@@ -625,6 +640,79 @@ Project
     width: 62%;
     padding-right: 10%;
   }
+}
+
+.p-pagenation {
+  display: flex;
+  justify-content: space-between;
+  color: #707070;
+  margin: 0 5% 30px;
+}
+
+@media only screen and (min-width: 834px) {
+  .p-pagenation {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .p-pagenation {
+    margin-bottom: 62px;
+  }
+}
+
+.p-pagenation li, .p-pagenation span, .p-pagenation a {
+  font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 834px) {
+  .p-pagenation li, .p-pagenation span, .p-pagenation a {
+    font-weight: 600;
+  }
+}
+
+.p-pagenation__current-text {
+  display: none;
+}
+
+@media only screen and (min-width: 834px) {
+  .p-pagenation__current-text {
+    display: block;
+  }
+}
+
+.p-pagenation__prev, .p-pagenation__next {
+  display: block;
+  margin: 0 10px;
+}
+
+@media only screen and (min-width: 834px) {
+  .p-pagenation__prev span, .p-pagenation__next span {
+    display: none;
+  }
+}
+
+.p-pagenation-list {
+  display: none;
+}
+
+@media only screen and (min-width: 834px) {
+  .p-pagenation-list {
+    display: flex;
+  }
+}
+
+.p-pagenation-list__item {
+  display: block;
+  padding: 7px 13px;
+  border: solid 1.5px #707070;
+  margin: 0 7.5px;
+}
+
+.p-pagenation-list__item--current {
+  background-color: #3C2A10;
+  color: white;
 }
 
 /* =========================================================

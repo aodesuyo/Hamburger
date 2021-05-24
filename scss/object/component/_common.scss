@@ -19,8 +19,10 @@
         &--white-bold{
             color: white;
             font-weight: 600;
-            font-size: 2.4rem;
             margin-bottom: 0px;
+            @include media_PC_wide{
+                font-size: 2.4rem;
+            }
         }
     }
 }
