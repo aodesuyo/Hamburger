@@ -11,6 +11,7 @@ Layout
 @import "./layout/_front.scss";
 @import "./layout/_archive.scss";
 @import "./layout/_visual.scss";
+@import "./layout/_post.scss";
 /* =========================================================
 Component
 ========================================================= */
@@ -28,7 +29,7 @@ Project
 @import "./object/project/_footer.scss";
 @import "./object/project/_nav.scss";
 @import "./object/project/_front.scss";
-@import "./object/project/_pagenation.scss"
+@import "./object/project/_pagenation.scss";
 /* =========================================================
 Utility
 ========================================================= */

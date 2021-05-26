@@ -8,7 +8,7 @@ body {
 
 * {
   font-size: 62.5%;
-  font-family: 'Roboto', sans-serif,'M PLUS 1p', sans-serif;
+  font-family: 'Roboto','M PLUS 1p',  sans-serif;
 }
 
 ::-webkit-search-cancel-button {
@@ -119,6 +119,10 @@ Layout
   .l-visual--archive {
     height: 239px;
   }
+}
+
+.l-post-wrapper {
+  padding: 0 20px;
 }
 
 /* =========================================================
@@ -281,6 +285,13 @@ Component
   }
 }
 
+.c-visual--single {
+  background-image: url(../../../img/single_visual.jpg);
+  background-position: center;
+  background-size: auto;
+  height: 60vw;
+}
+
 .c-visual__title {
   color: white;
   font-size: 4rem;
@@ -311,6 +322,28 @@ Component
 
 .c-common__title {
   color: #3C2A10;
+  font-size: 2rem;
+  margin: 30px 0;
+}
+
+.c-common__title--xl {
+  font-size: 4rem;
+}
+
+.c-common__title--lg {
+  font-size: 2.4rem;
+}
+
+.c-common__title--white {
+  color: white;
+  margin: 0;
+}
+
+@media only screen and (min-width: 1920px) {
+  .c-common__title--white {
+    font-size: 3.6rem;
+    margin-bottom: 47px;
+  }
 }
 
 .c-common__text {
@@ -344,23 +377,6 @@ Component
 @media only screen and (min-width: 1920px) {
   .c-common__text--white-bold {
     font-size: 2.4rem;
-  }
-}
-
-h2.c-common__title {
-  font-size: 4rem;
-  margin: 30px 0;
-}
-
-h3.c-common__title--white {
-  font-size: 2rem;
-  color: white;
-}
-
-@media only screen and (min-width: 1920px) {
-  h3.c-common__title--white {
-    font-size: 3.6rem;
-    margin-bottom: 47px;
   }
 }
 
