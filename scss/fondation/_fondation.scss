@@ -17,6 +17,8 @@
 $beige:#F2EDE9;
 $darkgray:#707070;
 $blown:#3C2A10;
+$lightgray:#F5F5F5;
+$blue:#4A6C9B;
 
 body{
   overflow-x: hidden;
@@ -35,4 +37,8 @@ li{
 a{
   color : inherit;
   text-decoration : none;
+}
+cite{
+  height: auto;
+  font-style: normal;
 }
