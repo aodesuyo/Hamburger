@@ -20,6 +20,8 @@ $blown:#3C2A10;
 $lightgray:#F5F5F5;
 $blue:#4A6C9B;
 
+$textSize:1.6rem;
+
 body{
   overflow-x: hidden;
 }
@@ -41,4 +43,7 @@ a{
 cite{
   height: auto;
   font-style: normal;
+}
+code{
+  padding-left: 0;
 }

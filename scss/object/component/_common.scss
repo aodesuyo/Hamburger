@@ -23,7 +23,7 @@
     
     &__text{
         color: $blown;
-        font-size: 1.6rem;
+        font-size: $textSize;
         margin: 19px 0;
         @include media_PC{
             margin-bottom: 40px;
