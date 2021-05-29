@@ -131,12 +131,18 @@ Layout
 }
 
 .l-post-wrapper {
-  padding: 0 20px 50px;
+  padding: 0 20px 40px;
 }
 
 @media only screen and (min-width: 834px) {
   .l-post-wrapper {
-    padding: 0 60px 50px;
+    padding: 0 60px 10px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .l-post-wrapper {
+    padding: 0 100px 100px;
   }
 }
 
@@ -398,9 +404,14 @@ Component
   }
 }
 
-@media only screen and (min-width: 1920px) {
-  .c-common__text {
-    margin-bottom: 60px;
+.c-common__text--bold {
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+@media only screen and (min-width: 834px) {
+  .c-common__text--bold {
+    margin: 60px 0;
   }
 }
 
@@ -456,7 +467,7 @@ Component
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 100%;
+  object-position: center 90%;
 }
 
 .c-post-img--wide {
@@ -481,7 +492,6 @@ Component
 
 .c-post-box2Col {
   display: flex;
-  height: 47vw;
   overflow: hidden;
   margin: 30px 0;
 }
@@ -489,6 +499,7 @@ Component
 @media only screen and (min-width: 834px) {
   .c-post-box2Col {
     margin: 60px 0;
+    height: auto;
   }
 }
 
@@ -540,9 +551,28 @@ Component
   }
 }
 
+@media only screen and (min-width: 1920px) {
+  .c-post-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+
 .c-post-grid__item {
   overflow: hidden;
   height: 55vw;
+}
+
+@media only screen and (min-width: 834px) {
+  .c-post-grid__item {
+    height: 24vw;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .c-post-grid__item {
+    height: 13.4vw;
+  }
 }
 
 .c-post-grid__item img {
@@ -553,8 +583,8 @@ Component
 }
 
 @media only screen and (min-width: 834px) {
-  .c-post-grid__item {
-    height: 24vw;
+  .c-post-grid__item img {
+    object-position: center 70%;
   }
 }
 
@@ -615,7 +645,6 @@ li > .c-post-list {
   border: solid 1px #707070;
   padding: calc(1.75 * 1.6rem);
   border-radius: 1.6rem;
-  margin: 30px 0;
 }
 
 .c-post-button a {
@@ -625,7 +654,7 @@ li > .c-post-list {
 
 @media only screen and (min-width: 834px) {
   .c-post-button {
-    width: 60%;
+    width: 429px;
   }
 }
 
@@ -983,11 +1012,21 @@ Project
 /* =========================================================
 Utility
 ========================================================= */
-.u-post__margin--lg {
-  margin-bottom: 14vw;
+@media only screen and (min-width: 834px) {
+  .u-post__margin--lg {
+    margin-bottom: 120px;
+  }
+  .u-post__marign--xl {
+    margin-bottom: 240px;
+  }
 }
 
-.u-post__marign--xl {
-  margin-bottom: 28vw;
+@media only screen and (min-width: 1920px) {
+  .u-post__margin--lg {
+    margin: 60px 0;
+  }
+  .u-post__marign--xl {
+    margin-bottom: 60px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,19 @@
 .u-post{
+    @include media_PC{
     &__margin--lg{
-        margin-bottom: 14vw;
+        margin-bottom: 120px;
     }
     &__marign--xl{
-        margin-bottom: 28vw;
+        margin-bottom: 240px;
+    }
+    }
+    @include media_PC_wide{
+        &__margin--lg{
+            margin:60px 0;
+        }
+        &__marign--xl{
+            margin-bottom:60px;
+        }
+    
     }
 }

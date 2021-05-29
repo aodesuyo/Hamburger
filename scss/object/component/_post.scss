@@ -17,7 +17,7 @@
         width: 100%;
         height: 100%;
         object-fit:cover;
-        object-position: center 100%;
+        object-position: center 90%;
     }
     &--wide{
         height: 32vw;
@@ -37,11 +37,11 @@
 }
 .c-post-box2Col{
     display: flex;
-    height: 47vw;
     overflow: hidden;
     margin: 30px 0;
     @include media_PC{
         margin: 60px 0;
+        height: auto;
     }
     &__img{
         width: 43%;
@@ -76,17 +76,28 @@
         grid-template-columns: 1fr 1fr;
         gap:20px 15px;
     }
+    @include media_PC_wide{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:20px;
+
+    }
     &__item{
         overflow: hidden;
         height: 55vw;
+        @include media_PC{
+            height: 24vw;
+        }
+        @include media_PC_wide{
+            height: 13.4vw;
+        }
         img{
             width: 100%;
             height: 100%;
             object-fit:cover;
             object-position: center center;
-        }
-        @include media_PC{
-            height: 24vw;
+            @include media_PC{
+                object-position: center 70%;
+            }
         }
     }
 }
@@ -139,12 +150,11 @@
     border: solid 1px $darkgray;
     padding:calc(1.75 * #{$textSize});
     border-radius: $textSize;
-    margin: 30px 0;
     a{
         font-weight: bold;
         font-size: $textSize;    
     }
     @include media_PC{
-        width: 60%;
+        width: 429px;
     }
 }

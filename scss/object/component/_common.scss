@@ -34,8 +34,12 @@
         @include media_PC{
             margin: 60px 0;
         }
-        @include media_PC_wide{
-            margin-bottom: 60px;
+        &--bold{
+            font-weight: bold;
+            margin: 30px 0;
+            @include media_PC{
+                margin: 60px 0;
+            }    
         }
         &--white{
             color: white;    
