@@ -11,4 +11,10 @@
             height: 239px;
         }
     }
+    &--single{
+        height: 60vw;
+        @include media_PC{
+            height: 500px;
+        }
+    }
 }
