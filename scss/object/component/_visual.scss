@@ -29,6 +29,9 @@
             background-size: 100%;
         }
     }
+    &--page{
+        background-image: url(../../../img/page_visual.jpg);
+    }
     &__title{
         $fontSize:4rem;
         color:white;    
