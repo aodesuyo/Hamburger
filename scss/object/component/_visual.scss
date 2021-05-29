@@ -26,6 +26,13 @@
         background-position: center;
         background-size:auto;        
         height: 60vw;
+        @include media_PC{
+            height: 500px;
+            background-size: 1920px auto;
+        }
+        @include media_PC_wide{
+            background-size: 100%;
+        }
     }
     &__title{
         $fontSize:4rem;

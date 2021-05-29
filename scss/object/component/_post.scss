@@ -2,6 +2,11 @@
     background-color: $lightgray;
     padding:10px 20px;
     margin: 30px 0;
+    @include media_PC{
+        margin: 60px 0;
+        padding:0px 50px;
+        overflow: hidden;
+    }
     &__source-text{
         color: $blue;
         border-bottom: solid 1.3px $blue;
@@ -20,6 +25,9 @@
         width: 100%;
         overflow: hidden;
         margin: 30px 0;
+        @include media_PC{
+            margin: 60px 0;
+        }
     }
     &--center{
         width: 75%;
@@ -32,13 +40,22 @@
     height: 47vw;
     overflow: hidden;
     margin: 30px 0;
+    @include media_PC{
+        margin: 60px 0;
+    }
     &__img{
         width: 43%;
         &--left{
             margin-right: 10px;
+            @include media_PC{
+                margin-right: 20px;
+            }
         }
         &--right{
             margin-left: 10px;
+            @include media_PC{
+                margin-left: 20px;
+            }
         }
         img{
             width: 100%;
@@ -55,6 +72,10 @@
     gap: 20px;
     grid-template-columns: 1fr;
     margin: 30px 0;
+    @include media_PC{
+        grid-template-columns: 1fr 1fr;
+        gap:20px 15px;
+    }
     &__item{
         overflow: hidden;
         height: 55vw;
@@ -64,10 +85,16 @@
             object-fit:cover;
             object-position: center center;
         }
+        @include media_PC{
+            height: 24vw;
+        }
     }
 }
 .c-post-list{
     margin: 30px 0;
+    @include media_PC{
+        margin: 60px;
+    }
     &__item{
         font-size: $textSize;
     }
@@ -116,5 +143,8 @@
     a{
         font-weight: bold;
         font-size: $textSize;    
+    }
+    @include media_PC{
+        width: 60%;
     }
 }

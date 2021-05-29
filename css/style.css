@@ -134,6 +134,12 @@ Layout
   padding: 0 20px 50px;
 }
 
+@media only screen and (min-width: 834px) {
+  .l-post-wrapper {
+    padding: 0 60px 50px;
+  }
+}
+
 /* =========================================================
 Component
 ========================================================= */
@@ -301,6 +307,19 @@ Component
   height: 60vw;
 }
 
+@media only screen and (min-width: 834px) {
+  .c-visual--single {
+    height: 500px;
+    background-size: 1920px auto;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .c-visual--single {
+    background-size: 100%;
+  }
+}
+
 .c-visual__title {
   color: white;
   font-size: 4rem;
@@ -335,6 +354,12 @@ Component
   margin: 30px 0;
 }
 
+@media only screen and (min-width: 834px) {
+  .c-common__title {
+    margin: 60px 0;
+  }
+}
+
 .c-common__title--xl {
   font-size: 4rem;
 }
@@ -346,6 +371,12 @@ Component
 .c-common__title--white {
   color: white;
   margin: 0;
+}
+
+@media only screen and (min-width: 834px) {
+  .c-common__title--white {
+    margin-bottom: 24px;
+  }
 }
 
 @media only screen and (min-width: 1920px) {
@@ -363,7 +394,7 @@ Component
 
 @media only screen and (min-width: 834px) {
   .c-common__text {
-    margin-bottom: 40px;
+    margin: 60px 0;
   }
 }
 
@@ -375,12 +406,25 @@ Component
 
 .c-common__text--white {
   color: white;
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 834px) {
+  .c-common__text--white {
+    margin-top: 10px;
+  }
 }
 
 .c-common__text--white-bold {
   color: white;
   font-weight: 600;
   margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 834px) {
+  .c-common__text--white-bold {
+    margin: 10px 0;
+  }
 }
 
 @media only screen and (min-width: 1920px) {
@@ -393,6 +437,14 @@ Component
   background-color: #F5F5F5;
   padding: 10px 20px;
   margin: 30px 0;
+}
+
+@media only screen and (min-width: 834px) {
+  .c-post-quote {
+    margin: 60px 0;
+    padding: 0px 50px;
+    overflow: hidden;
+  }
 }
 
 .c-post-quote__source-text {
@@ -415,6 +467,12 @@ Component
   margin: 30px 0;
 }
 
+@media only screen and (min-width: 834px) {
+  .c-post-img--wide {
+    margin: 60px 0;
+  }
+}
+
 .c-post-img--center {
   width: 75%;
   height: 45%;
@@ -428,6 +486,12 @@ Component
   margin: 30px 0;
 }
 
+@media only screen and (min-width: 834px) {
+  .c-post-box2Col {
+    margin: 60px 0;
+  }
+}
+
 .c-post-box2Col__img {
   width: 43%;
 }
@@ -436,8 +500,20 @@ Component
   margin-right: 10px;
 }
 
+@media only screen and (min-width: 834px) {
+  .c-post-box2Col__img--left {
+    margin-right: 20px;
+  }
+}
+
 .c-post-box2Col__img--right {
   margin-left: 10px;
+}
+
+@media only screen and (min-width: 834px) {
+  .c-post-box2Col__img--right {
+    margin-left: 20px;
+  }
 }
 
 .c-post-box2Col__img img {
@@ -457,6 +533,13 @@ Component
   margin: 30px 0;
 }
 
+@media only screen and (min-width: 834px) {
+  .c-post-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 15px;
+  }
+}
+
 .c-post-grid__item {
   overflow: hidden;
   height: 55vw;
@@ -469,8 +552,20 @@ Component
   object-position: center center;
 }
 
+@media only screen and (min-width: 834px) {
+  .c-post-grid__item {
+    height: 24vw;
+  }
+}
+
 .c-post-list {
   margin: 30px 0;
+}
+
+@media only screen and (min-width: 834px) {
+  .c-post-list {
+    margin: 60px;
+  }
 }
 
 .c-post-list__item {
@@ -526,6 +621,12 @@ li > .c-post-list {
 .c-post-button a {
   font-weight: bold;
   font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 834px) {
+  .c-post-button {
+    width: 60%;
+  }
 }
 
 /* =========================================================
@@ -882,4 +983,11 @@ Project
 /* =========================================================
 Utility
 ========================================================= */
+.u-post__margin--lg {
+  margin-bottom: 14vw;
+}
+
+.u-post__marign--xl {
+  margin-bottom: 28vw;
+}
 /*# sourceMappingURL=style.css.map */
