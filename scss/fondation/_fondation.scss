@@ -22,6 +22,13 @@ $blue:#4A6C9B;
 
 $textSize:1.6rem;
 
+@mixin blockMargin {
+  margin: 30px 0;
+  @include media_PC{
+    margin: 60px 0;
+  }  
+}
+
 body{
   overflow-x: hidden;
 }

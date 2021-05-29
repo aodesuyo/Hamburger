@@ -1,9 +1,8 @@
 .c-post-quote{
+    @include blockMargin;
     background-color: $lightgray;
     padding:10px 20px;
-    margin: 30px 0;
     @include media_PC{
-        margin: 60px 0;
         padding:0px 50px;
         overflow: hidden;
     }
@@ -13,36 +12,33 @@
     }
 }
 .c-post-img{
+    @include blockMargin;
+    &--wide{
+        height: 32vw;
+        max-height: 500px;
+        width: 100%;
+        overflow: hidden;
+    }
+    &--center{
+        width: 75%;
+        height: 45%;
+        margin:30px auto;
+        @include media_PC{
+            margin: 60px auto;
+        }
+    }
     img{
         width: 100%;
         height: 100%;
         object-fit:cover;
         object-position: center 90%;
     }
-    &--wide{
-        height: 32vw;
-        max-height: 500px;
-        width: 100%;
-        overflow: hidden;
-        margin: 30px 0;
-        @include media_PC{
-            margin: 60px 0;
-        }
-    }
-    &--center{
-        width: 75%;
-        height: 45%;
-        margin:30px auto;
-    }
+
 }
 .c-post-box2Col{
+    @include blockMargin;
     display: flex;
     overflow: hidden;
-    margin: 30px 0;
-    @include media_PC{
-        margin: 60px 0;
-        height: auto;
-    }
     &__img{
         width: 43%;
         &--left{
@@ -68,10 +64,10 @@
     }
 }
 .c-post-grid{
+    @include blockMargin;
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr;
-    margin: 30px 0;
     @include media_PC{
         grid-template-columns: 1fr 1fr;
         gap:20px 15px;
@@ -102,10 +98,7 @@
     }
 }
 .c-post-list{
-    margin: 30px 0;
-    @include media_PC{
-        margin: 60px;
-    }
+    @include blockMargin;
     &__item{
         font-size: $textSize;
     }
@@ -122,13 +115,13 @@
     }
 }
 .c-post-pre{
+    @include blockMargin;
     padding:50px 50px 50px 60px;
     background-color: $lightgray;
-    margin: 30px 0;
     font-size: $textSize;
 }
 .c-post-table{
-    margin: 30px 0;
+    @include blockMargin;
     border-collapse: collapse;
     width: 100%;
     &__row{

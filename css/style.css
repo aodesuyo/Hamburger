@@ -355,9 +355,9 @@ Component
 }
 
 .c-common__title {
+  margin: 30px 0;
   color: #3C2A10;
   font-size: 2rem;
-  margin: 30px 0;
 }
 
 @media only screen and (min-width: 834px) {
@@ -445,14 +445,19 @@ Component
 }
 
 .c-post-quote {
+  margin: 30px 0;
   background-color: #F5F5F5;
   padding: 10px 20px;
-  margin: 30px 0;
 }
 
 @media only screen and (min-width: 834px) {
   .c-post-quote {
     margin: 60px 0;
+  }
+}
+
+@media only screen and (min-width: 834px) {
+  .c-post-quote {
     padding: 0px 50px;
     overflow: hidden;
   }
@@ -463,11 +468,14 @@ Component
   border-bottom: solid 1.3px #4A6C9B;
 }
 
-.c-post-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 90%;
+.c-post-img {
+  margin: 30px 0;
+}
+
+@media only screen and (min-width: 834px) {
+  .c-post-img {
+    margin: 60px 0;
+  }
 }
 
 .c-post-img--wide {
@@ -475,13 +483,6 @@ Component
   max-height: 500px;
   width: 100%;
   overflow: hidden;
-  margin: 30px 0;
-}
-
-@media only screen and (min-width: 834px) {
-  .c-post-img--wide {
-    margin: 60px 0;
-  }
 }
 
 .c-post-img--center {
@@ -490,16 +491,28 @@ Component
   margin: 30px auto;
 }
 
+@media only screen and (min-width: 834px) {
+  .c-post-img--center {
+    margin: 60px auto;
+  }
+}
+
+.c-post-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 90%;
+}
+
 .c-post-box2Col {
+  margin: 30px 0;
   display: flex;
   overflow: hidden;
-  margin: 30px 0;
 }
 
 @media only screen and (min-width: 834px) {
   .c-post-box2Col {
     margin: 60px 0;
-    height: auto;
   }
 }
 
@@ -538,10 +551,16 @@ Component
 }
 
 .c-post-grid {
+  margin: 30px 0;
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr;
-  margin: 30px 0;
+}
+
+@media only screen and (min-width: 834px) {
+  .c-post-grid {
+    margin: 60px 0;
+  }
 }
 
 @media only screen and (min-width: 834px) {
@@ -594,7 +613,7 @@ Component
 
 @media only screen and (min-width: 834px) {
   .c-post-list {
-    margin: 60px;
+    margin: 60px 0;
   }
 }
 
@@ -616,16 +635,28 @@ li > .c-post-list {
 }
 
 .c-post-pre {
+  margin: 30px 0;
   padding: 50px 50px 50px 60px;
   background-color: #F5F5F5;
-  margin: 30px 0;
   font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 834px) {
+  .c-post-pre {
+    margin: 60px 0;
+  }
 }
 
 .c-post-table {
   margin: 30px 0;
   border-collapse: collapse;
   width: 100%;
+}
+
+@media only screen and (min-width: 834px) {
+  .c-post-table {
+    margin: 60px 0;
+  }
 }
 
 .c-post-table__row td:first-child {
@@ -1022,10 +1053,7 @@ Utility
 }
 
 @media only screen and (min-width: 1920px) {
-  .u-post__margin--lg {
-    margin: 60px 0;
-  }
-  .u-post__marign--xl {
+  .u-post__margin--lg, .u-post__marign--xl {
     margin-bottom: 60px;
   }
 }
